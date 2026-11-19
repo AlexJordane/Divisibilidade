@@ -57,54 +57,66 @@
 
 \begin{document}
 	
-	% --- CABEÇALHO ---
-	\begin{tcolorbox}[
-	enhanced, 
-	colback=white, 
-	colframe=black, 
-	boxrule=2pt,
-	left=0pt, 
-	right=0pt,
-	top=5pt,
-	bottom=5pt
-	]
-	\noindent
-		\begin{minipage}[c]{0.25\textwidth}
-			\centering
-			\includegraphics[width=4.5cm]{../alexjordane.github.io/ifes.png} 
-		\end{minipage}
-		\begin{minipage}[c]{0.70\textwidth}
-			\centering
-			\textbf{Investigando Critérios de Divisibilidade}\\
-			\textbf{Licenciatura em Matemática}\\
-			Professor: \textbf{Alex Jordane}
-		\end{minipage}
-	\end{tcolorbox}
-	
-	\vspace{\fill}
-	
-		A divisibilidade é uma ideia que pode nos ajudar a compreendermos a estrutura dos números naturais. Vamos tratar de algumas ideias que envolvem procedimentos que nos permitem verificar se um número $N$ é divisível por outros números. Vamos focar nos números primos e em alguns outros naturais produtos de dois primos.
+	\begin{titlepage}
+		\centering
 		
-		Vamos organizar os procedimentos de verificação em três grupos: (\ref{sec:posicao}) procedimentos pela posição; (\ref{sec:soma}) procedimentos pela soma de algarismos; e (\ref{sec:decomp}). procedimentos por decomposição de números. Em alguns momentos poderemos combinar mais de um desses procedimentos.
+		% --- Cabeçalho da Instituição ---
+		\includegraphics[width=8cm]{../alexjordane.github.io/ifes.png}\\[1cm]
 		
-		Como estaremos tratando de procedimentos, iremos dar uma atenção aos processos matemáticos que justificam os procedimentos. Reforçamos assim que, \textbf{mais do que ``decorar'' os procedimentos, é importante compreeder os processos matemáticos envolvidos}.
-		
-		Bons estudos!
+		{\Large \textbf{Instituto Federal do Espírito Santo}}\\[0.5cm]
+		{\large \textbf{Licenciatura em Matemática $\bullet$ Educimat}}\\[0.5cm]
 		
 		\vspace{\fill}
 		
-		\footnotesize
+		% --- Título ---
+		{\Huge \textbf{Investigando Critérios de Divisibilidade}}\\[0.5cm]
+		{\Large Material Teórico e Metodológico de Apoio}
+		
+		\vspace{\fill}
+		
+		% --- Autoria ---
+		{\Large Professor Alex Jordane}
+		
+		\vspace{\fill}
+		
+		% --- Local e Data ---
+		{\large Vitória -- ES}\\[0.2cm]
+		{\large 2026}
+		
+	\end{titlepage}
+	
+	\setcounter{page}{1}
+	
+	\section*{Apresentação}
+	\thispagestyle{empty}
+	
+	A divisibilidade é uma ideia que pode nos ajudar a compreendermos a estrutura dos números naturais. Vamos tratar de algumas ideias que envolvem procedimentos que nos permitem verificar se um número $N$ é divisível por outros números. Vamos focar nos números primos e em alguns outros naturais produtos de dois primos.
+	
+	Vamos organizar os procedimentos de verificação em três grupos: (\ref{sec:posicao}) procedimentos pela posição; (\ref{sec:soma}) procedimentos pela soma de algarismos; e (\ref{sec:decomp}) procedimentos por decomposição de números. Em alguns momentos poderemos combinar mais de um desses procedimentos.
+	
+	Como estaremos tratando de procedimentos, iremos dar uma atenção aos processos matemáticos que justificam os procedimentos. Reforçamos assim que, \textbf{mais do que ``decorar'' os procedimentos, é importante compreender os processos matemáticos envolvidos}.
+	
+	Bons estudos!
+	
+	\vspace{\fill}
+	
+	{\footnotesize
 		\texttt{Esta é uma segunda versão do material, editada em 17/08/2026.}\\
-		\texttt{Este material foi elaborado em colaboração com a inteligência artificial Gemini, versão 3.1 Pro.} \\		
-		\texttt{O compartilhamento e a reprodução deste material são permitidos, desde que a fonte e a autoria sejam citadas.}  \\		
-		\texttt{Esta obra está licenciada com uma Licença Atribuição-NãoComercial-SemDerivações 4.0 Brasil.}
+		\texttt{Elaborado em colaboração com a inteligência artificial Gemini, versão 3.1 Pro.}\\
+		\texttt{O compartilhamento e a reprodução deste material são permitidos para fins didáticos, desde que citadas a fonte e a autoria.}\\
+		\texttt{Esta obra está sob uma Licença Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional.}
 		\begin{center}
-			\includegraphics[width=4cm]{CC.png}
+			\includegraphics[width=3.5cm]{../alexjordane.github.io/CC.png}
 		\end{center}
-		
-		\newpage
-		
-		\section*{Notações de Números Inteiros}
+	}
+	
+	\newpage
+	\tableofcontents
+	\thispagestyle{empty}
+	\newpage
+	
+	\section*{Notações de Números Inteiros}
+	\addcontentsline{toc}{section}{Notações de Números Inteiros}
 		
 		Antes de iniciarmos a discussão sobre os procedimentos, cabe uma explicação sobre as notações de um número inteiro usadas neste material. Vamos sempre chamar o número que queremos descobrir seus divisores de $N$. Iremos também notar o número $N$ a partir dos algarismos que o compõem.
 		
